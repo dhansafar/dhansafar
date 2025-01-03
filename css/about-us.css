@@ -1,0 +1,584 @@
+/* Introduction Section CSS */
+.introduction-section {
+    background: linear-gradient(135deg, #502D8A 60%, #fff 40%);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.introduction-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction-section .content {
+    max-width: 50%;
+}
+
+.introduction-section .intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Updated Introduction Section CSS */
+.introduction-section .intro-slogan {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700;
+    /* Eye-catching gold color for contrast */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.introduction-section .intro-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.introduction-section .intro-description,
+.introduction-section .intro-mission,
+.introduction-section .intro-vision {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.introduction-section .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #502D8A;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.introduction-section .cta-button:hover {
+    background-color: #ddd;
+}
+
+.introduction-section .image {
+    max-width: 50%;
+    text-align: center;
+}
+
+.introduction-section .image img {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+/* Responsive Design - Mobile and Tablets */
+@media screen and (max-width: 768px) {
+    .introduction-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction-section .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .introduction-section .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .introduction-section .intro-slogan {
+        font-size: 1.5rem;
+    }
+
+    .introduction-section .intro-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .introduction-section .intro-description,
+    .introduction-section .intro-mission,
+    .introduction-section .intro-vision {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .introduction-section .cta-button {
+        padding: 10px 20px;
+    }
+
+    .introduction-section .image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .introduction-section .image img {
+        max-width: 300px;
+        margin-right: 0;
+    }
+}
+
+/* Responsive Design - Small Screens */
+@media screen and (max-width: 480px) {
+    .introduction-section {
+        background: linear-gradient(135deg, #502D8A 70%, #fff 30%);
+    }
+
+    .introduction-section .intro-title {
+        font-size: 2rem;
+    }
+
+    .introduction-section .intro-slogan {
+        font-size: 1.3rem;
+    }
+
+    .introduction-section .intro-subtitle {
+        font-size: 1rem;
+    }
+
+    .introduction-section .intro-description,
+    .introduction-section .intro-mission,
+    .introduction-section .intro-vision {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .introduction-section .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .introduction-section .image img {
+        max-width: 250px;
+    }
+}
+
+
+/* ================================ */
+/* Our Story Section CSS */
+.our-story-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3f0fc, #ffffff);
+    color: #333;
+}
+
+.our-story-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.story-text {
+    flex: 1 1 55%;
+}
+
+.story-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.story-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: #502D8A;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.story-intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.story-intro .highlight {
+    color: #502D8A;
+    font-weight: bold;
+}
+
+.story-details {
+    margin-top: 20px;
+}
+
+.story-item {
+    margin-bottom: 20px;
+}
+
+.story-item h3 {
+    font-size: 1.5rem;
+    color: #502D8A;
+    margin-bottom: 10px;
+}
+
+.story-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .story-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-text {
+        flex: 1 1 100%;
+    }
+
+    .story-image {
+        flex: 1 1 100%;
+    }
+}
+
+/* ----------------------- ----------------------- */
+
+/* Core Values Section CSS */
+.core-values-section {
+    padding: 60px 20px;
+    background: #502D8A;
+    /* Updated background color */
+    color: #fff;
+    /* Text color updated for contrast */
+}
+
+.core-values-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.core-values-section .section-title {
+    font-size: 2.8rem;
+    color: #fff;
+    /* Updated text color for contrast */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    /* Updated text color for contrast */
+}
+
+.values-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.value-item {
+    flex: 1 1 22%;
+    background-color: #fff;
+    /* Keep card background white */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: #502D8A;
+    /* Icon color matching the section's primary color */
+    margin-bottom: 20px;
+}
+
+.value-item h3 {
+    font-size: 1.8rem;
+    color: #502D8A;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .value-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .value-item {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* ================================== */
+
+/* Team Section CSS - Updated for a Compact Design */
+.team-section {
+    padding: 50px 20px;
+    /* Reduced top and bottom padding */
+    background: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+.team-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    /* Reduced font size slightly */
+    color: #502D8A;
+    margin-bottom: 20px;
+    /* Reduced margin */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.team-section .intro-text {
+    font-size: 1.3rem;
+    /* Slightly smaller text */
+    line-height: 1.6;
+    /* Reduced line height for less space */
+    margin-bottom: 30px;
+    /* Reduced margin */
+    color: #555;
+}
+
+.team-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    /* Reduced max width */
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Reduced padding */
+    border-radius: 15px;
+    margin: 15px auto;
+    /* Reduced margin */
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    /* Slightly reduced hover effect */
+}
+
+.team-photo img {
+    border-radius: 50%;
+    width: 160px;
+    /* Slightly smaller photo */
+    height: 160px;
+    /* Slightly smaller photo */
+    object-fit: cover;
+    border: 4px solid #502D8A;
+    margin-bottom: 15px;
+    /* Reduced margin */
+}
+
+.team-info h3 {
+    font-size: 2rem;
+    /* Reduced font size */
+    color: #502D8A;
+    margin-bottom: 8px;
+    /* Reduced margin */
+}
+
+.team-info .role {
+    font-size: 1.1rem;
+    /* Slightly smaller font size */
+    color: #777;
+    margin-bottom: 10px;
+    /* Reduced margin */
+}
+
+.team-info .bio {
+    font-size: 1rem;
+    /* Smaller font size */
+    color: #555;
+    line-height: 1.5;
+    /* Reduced line height */
+    margin-bottom: 15px;
+    /* Reduced bottom margin */
+    max-width: 480px;
+    /* Slightly reduced max-width */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team-info .quote {
+    font-style: italic;
+    color: #502D8A;
+    font-size: 1.1rem;
+    /* Slightly smaller quote font */
+    margin-top: 15px;
+    /* Reduced top margin */
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 85%;
+        /* Adjusted width for smaller screens */
+        padding: 15px;
+        /* Reduced padding */
+    }
+
+    .team-photo img {
+        width: 140px;
+        /* Reduced photo size */
+        height: 140px;
+        /* Reduced photo size */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2.2rem;
+        /* Smaller font size */
+    }
+
+    .team-info .quote {
+        font-size: 1rem;
+        /* Adjusted quote font */
+    }
+
+    .team-info .bio {
+        font-size: 0.95rem;
+        /* Adjusted bio font */
+    }
+}
+
+/* ================ */
+
+/* Achievements Section */
+.achievements-section {
+    padding: 40px 20px;
+    background: #502D8A; /* Updated background color */
+    color: #fff; /* Text color changed to white for contrast */
+    text-align: center;
+}
+
+.achievements-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievements-section .section-title {
+    font-size: 3rem;
+    color: #fff; /* White color for the section title */
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    color: #fff; /* White color for the intro text */
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.achievements-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.achievement-item {
+    background: #f9f9f9; /* Keeping the card background the same */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.achievement-item:hover {
+    transform: translateY(-10px);
+}
+
+.icon-container {
+    font-size: 3rem;
+    color: #502D8A; /* Matching the icon color with primary */
+    margin-bottom: 20px;
+}
+
+.achievement-title {
+    font-size: 1.8rem;
+    color: #502D8A; /* Title color matching the primary theme */
+    margin-bottom: 10px;
+}
+
+.achievement-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .achievements-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievement-item {
+        width: 80%;
+    }
+
+    .achievements-section .section-title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+}

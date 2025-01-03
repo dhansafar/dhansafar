@@ -1,0 +1,750 @@
+/* Hero Section Styling for Download Page */
+.dw-hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #502D8A; /* Changed background color */
+    color: #F3F1F7; /* Adjusted text color for contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.dw-hero-content {
+    max-width: 650px; /* Increased width for more space */
+    margin-right: 30px; /* Spacing between text and image */
+}
+
+.dw-hero-content h1 {
+    font-size: 3rem; /* Increased size for greater emphasis */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F3F1F7; /* Light color for text to stand out on dark background */
+}
+
+.dw-hero-content p {
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #F3F1F7; /* Ensured text is readable on dark background */
+}
+
+.dw-hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-download {
+    background-color: #F3F1F7; /* Light button color to contrast with dark background */
+    color: #502D8A; /* Dark text color to match overall theme */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px; /* Slightly rounded for a more modern look */
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #7E57C2; /* Hover effect with a lighter purple */
+    transform: scale(1.05); /* Slight scale effect for interactivity */
+}
+
+.or-text {
+    font-size: 1.2rem;
+    color: #F3F1F7; /* Light color for the text */
+    font-weight: 600;
+    margin: 0;
+}
+
+.dw-hero-qr {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.dw-hero-qr h3 {
+    font-size: 1.2rem;
+    color: #F3F1F7; /* Light color for the text */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.dw-hero-qr img {
+    width: 200px; /* Increased QR code size */
+    height: 200px; /* Ensures square dimensions */
+    border: 4px solid #F3F1F7; /* Matching border color for consistency */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for more prominence */
+    transition: transform 0.3s ease-in-out;
+}
+
+.dw-hero-qr img:hover {
+    transform: scale(1.1); /* Subtle zoom effect for interaction */
+}
+
+.coming-soon {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #7E57C2;
+    text-align: center; /* Centered for consistency */
+    margin-top: 15px;
+}
+
+.dw-hero-image {
+    animation: pulse 3s infinite; /* Apply pulse animation to image */
+}
+
+.dw-hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; /* Increased max height for larger image on desktops */
+    object-fit: contain;
+}
+
+/* Pulse Animation Keyframes */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .dw-hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .dw-hero-content,
+    .dw-hero-image {
+        max-width: 100%;
+    }
+
+    .dw-hero-buttons {
+        align-items: center;
+    }
+
+    .dw-hero-image img {
+        max-height: 680px; /* Adjust image height for smaller screens */
+    }
+
+    .btn-download {
+        padding: 10px 20px; /* Smaller padding on mobile */
+    }
+
+    .dw-hero-qr {
+        margin-top: -20px;
+    }
+}
+
+
+/* ==========  ======== */
+
+/* Download Instructions Section Styling */
+.download-instructions-section {
+    background-color: #502D8A;
+    padding: 60px 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.download-instructions-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.download-instructions-section .intro-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    color: #F7F7F7;
+    font-weight: 400; /* Added to make it lighter */
+}
+
+.platform-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    /* background-color: #502D8A; */
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+    text-align: center;
+}
+
+.platform-instructions .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.platform-instructions .icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.platform-instructions .content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #502D8A;
+}
+
+
+
+.platform-instructions .content ul, p{
+    padding-left:  20px;
+    list-style-type: none;
+    color: #7F3FBF;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.platform-instructions .content ul li {
+    margin-bottom: 15px;
+    position: relative; /* To position custom bullet points */
+    padding-left: 30px; 
+}
+
+/* Custom bullet styling */
+.platform-instructions .content ul li::before {
+    content: "•"; /* Custom bullet point */
+    font-size: 2rem; /* Size of the bullet */
+    color: #502D8A; /* Darker purple for the bullet */
+    position: absolute;
+    left: 0;
+    top: -12px;
+}
+/* Optional: Adding hover effect for list items */
+.platform-instructions .content ul li:hover {
+    color: #502D8A; /* Darker purple text on hover */
+    cursor: pointer;
+}
+
+.platform-instructions .apk-disclaimer {
+    font-size: 0.9rem;
+    color: #502D8A;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.coming-soon {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #502D8A;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .platform-instructions {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .platform-instructions .icon {
+        margin: 0;
+    }
+
+    .platform-instructions .content {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-instructions-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .platform-instructions .icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .platform-instructions {
+        padding: 30px; /* Added more padding for mobile devices */
+    }
+}
+
+/* =========== ============ */
+
+/* System Requirements Section Styling */
+.system-requirements-section {
+    background-color: #F7F7F7;
+    padding: 60px 20px;
+    color: #502D8A;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.system-requirements-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #502D8A;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.system-requirements-section .intro-text {
+    font-size: 1.2rem;
+    color: #7F3FBF;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.requirement {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.requirement .icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.requirement .content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #502D8A;
+    margin-bottom: 10px;
+}
+
+.requirement .content ul {
+    list-style-type: none;
+    padding: 0;
+    color: #7F3FBF;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.requirement .content ul li {
+    margin-bottom: 10px;
+}
+
+.requirement .content ul li strong {
+    color: #502D8A;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    
+    .requirements {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .requirement {
+        width: 45%;
+    }
+
+   
+}
+
+@media (max-width: 767px) {
+    .requirement .icon img {
+        width: 60px;
+        height: 60px;
+    }
+    .system-requirements-section h2{
+        font-size: 2.4rem;
+    }
+}
+
+/* =======  ========= */
+
+/* Screenshots/Video Demo Section Styling */
+.screenshots-demo-section {
+    background-color: #502D8A;
+    padding: 60px 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.screenshots-demo-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.screenshots-demo-section .intro-text {
+    font-size: 1.2rem;
+    color: #F7F7F7;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.screenshot img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 410px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.video-demo {
+    margin-top: 30px;
+}
+
+.video-demo h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.video-demo iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 405px; /* Aspect ratio 16:9 */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .screenshot img {
+        max-width: 100%;
+    }
+
+    .video-demo iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .screenshots-demo-section h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* ==========  ================= */
+
+/* Support Section Styling */
+.support-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #502D8A;
+    text-align: center;
+    border-top: 3px solid #502D8A;
+    border-bottom: 3px solid #502D8A;
+}
+
+.support-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #502D8A;
+}
+
+.support-section .intro-text {
+    font-size: 1.2rem;
+    color: #7F3FBF;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Section: Contact Info */
+.contact-info {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 45%;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #502D8A;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 1.6rem;
+    color: #502D8A;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #7F3FBF;
+}
+
+.contact-info a {
+    color: #502D8A;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #7F3FBF;
+}
+
+/* Right Section: Help Guides */
+.help-guides {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 45%;
+}
+
+.help-guides h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #502D8A;
+}
+
+.help-guides p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #7F3FBF;
+}
+
+.help-guides a {
+    color: #502D8A;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.help-guides a:hover {
+    color: #7F3FBF;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .support-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .help-guides {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .support-section h2 {
+        font-size: 2.4rem;
+    }
+}
+
+/* ======================== */
+
+/* Version History Section Styling */
+.version-history-section {
+    background-color: #502D8A;
+    padding: 60px 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.version-history-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.version-history-section .intro-text {
+    font-size: 1.2rem;
+    color: #F7F7F7;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.changelog {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #502D8A;
+}
+
+.card ul {
+    list-style-type: none;
+    padding-left: 20px;
+    color: #7F3FBF;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card ul li strong {
+    color: #502D8A;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .changelog {
+        gap: 20px;
+    }
+
+    .version-history-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* ====================== */
+
+/* Social Proof Section Styling */
+.social-proof-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    color: #502D8A;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.social-proof-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #502D8A;
+}
+
+.social-proof-section .intro-text {
+    font-size: 1.2rem;
+    color: #7F3FBF;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.download-counter h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #502D8A;
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #502D8A;
+    display: inline-block;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.social-icons .social-icon {
+    display: inline-block;
+    background-color: #502D8A;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #7F3FBF;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .social-proof-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .download-counter h3 {
+        font-size: 2rem;
+    }
+}

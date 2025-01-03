@@ -1,0 +1,134 @@
+
+/* Container Styles */
+.privacy-policy-section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.privacy-policy-section .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Section Title */
+.privacy-policy-section .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #502D8A;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Intro Text */
+.effective-date {
+    font-size: 16px;
+    text-align: center;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Content Formatting */
+.privacy-policy-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #502D8A;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy-section h2 i {
+    margin-right: 10px;
+}
+
+.privacy-policy-section ul {
+    list-style-type: none;
+    margin-left: 40px;
+    line-height: 1.8;
+}
+
+.privacy-policy-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy-section ul li i {
+    margin-right: 10px;
+    color: #502D8A;
+}
+
+.privacy-policy-section ul li a {
+    text-decoration: none;
+    color: #502D8A;
+    font-weight: 500;
+}
+
+.privacy-policy-section ul li a:hover {
+    text-decoration: underline;
+    color: #350F6B;
+}
+
+/* Policy Section */
+.policy-section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Information */
+.privacy-policy-section ul.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.privacy-policy-section ul.social-media li {
+    list-style: none;
+}
+
+.privacy-policy-section ul.social-media li a {
+    background-color: #502D8A;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.privacy-policy-section ul.social-media li a:hover {
+    background-color: #350F6B;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-policy-section .container {
+        width: 90%;
+    }
+
+    .privacy-policy-section  .section-title {
+        font-size: 30px;
+    }
+
+    .privacy-policy-section  h2 {
+        font-size: 22px;
+    }
+
+    .privacy-policy-section ul {
+        margin-left: 30px;
+    }
+
+    .privacy-policy-section ul li {
+        font-size: 14px;
+    }
+}
