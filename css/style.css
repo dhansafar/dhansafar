@@ -967,6 +967,10 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
     }
+
+    .testimonial {
+        width: 90%;
+    }
 }
 
 /* ============ */
@@ -1552,6 +1556,10 @@ nav a:hover {
 
     #contactForm button.cta-button {
         width: auto;
+    }
+
+    #contactForm input, #contactForm textarea {
+        width: 90%;
     }
 }
 

@@ -116,21 +116,25 @@
 }
 
 .contact-info .social-media li a {
-    background-color: #502D8A; /* Background color of the rounded button */
-    color: #f7f7f7; /* Icon color */
+    background-color: #502D8A;
+    /* Background color of the rounded button */
+    color: #f7f7f7;
+    /* Icon color */
     font-size: 1.5rem;
     padding: 10px;
-    border-radius: 50%; /* Makes the icon round */
+    border-radius: 50%;
+    /* Makes the icon round */
     display: flex;
     justify-content: center;
     align-items: center;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     transition: background-color 0.3s ease;
 }
 
 .contact-info .social-media li a:hover {
-    background-color: #fefefe; /* Hover effect */
+    background-color: #fefefe;
+    /* Hover effect */
     color: #502D8A;
 }
 
@@ -147,9 +151,24 @@
 
     .contact-form-container,
     .contact-info {
-        width: 100%;
+        width: 80%;
         margin-bottom: 30px;
     }
+
+    #contactForm input,
+    #contactForm textarea {
+        width: 90%;
+    }
+
+    .contact-details a {
+        margin-left: 2px;
+    }
+
+
+    .contact-info .social-media {
+        justify-content: center;
+    }
+
 }
 
 /* =============== */

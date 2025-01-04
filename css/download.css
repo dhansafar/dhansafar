@@ -711,14 +711,14 @@
 }
 
 /* Social Media Icons Styling */
-.social-icons {
+.dw-social-icons {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
 }
 
-.social-icons .social-icon {
+.dw-social-icons .dw-social-icon {
     display: inline-block;
     background-color: #502D8A;
     color: #fff;
@@ -728,7 +728,7 @@
     transition: all 0.3s ease;
 }
 
-.social-icons .social-icon:hover {
+.dw-social-icons .dw-social-icon:hover {
     background-color: #7F3FBF;
     transform: scale(1.1);
 }
@@ -739,7 +739,7 @@
         font-size: 2.4rem;
     }
 
-    .social-icons {
+    .dw-social-icons {
         flex-direction: row;
         gap: 20px;
     }
