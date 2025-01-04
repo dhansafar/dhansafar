@@ -18,10 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Simulating the opening of the popup after a delay
-    setTimeout(function () {
-        openPopup(); // Open popup after 1 second
-    }, 1000);
+    // Check if the target date has passed before opening the popup
+    const now = new Date().getTime();
+    if (now < targetDate) {
+        // Simulating the opening of the popup after a delay
+        setTimeout(function () {
+            openPopup(); // Open popup after 1 second
+        }, 1000);
+    }
 });
 
 // =================
