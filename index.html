@@ -82,13 +82,14 @@
 <body>
     <!-- Header Section -->
     <header>
-        <a href="index.html">
+        <a href="index.html" aria-label="Go to home page">
             <div class="logo">
                 <img alt="DhanSafar logo" src="icon/icon.png" width="40" height="40" />
                 <span>DhanSafar</span>
             </div>
         </a>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
+            >
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#features">Features</a></li>
@@ -99,38 +100,38 @@
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="social-icons">
-            <a href="https://in.linkedin.com/company/dhansafar" target="_blank" rel="noopener noreferrer">
+        <div class="social-icons" role="complementary" aria-label="Follow us on social media">
+            <a href="https://in.linkedin.com/company/dhansafar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/dhansafar.official/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/dhansafar.official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://x.com/dhansafar" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/dhansafar" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@harshilchovatiyaa" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@harshilchovatiyaa" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>
         <!-- Mobile Menu Toggle Button -->
-        <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open mobile menu">
             <span>&#9776;</span>
-        </div>
+            </div>
     </header>
 
 
     <div id="popup" class="popup-overlay">
         <div class="popup-container">
-            <div class="close-button" id="close-btn" >&times;</div> <!-- Close Button -->
+            <div class="close-button" id="close-btn">&times;</div> <!-- Close Button -->
 
             <div class="left">
                 <div class="logo">
                     <img alt="SecretSpirit logo" height="40" src="icon/icon.png" width="40" />
                     <span>DhanSafar</span>
                 </div>
-                
-    
+
+
                 <div class="content">
                     <h1>COMING <span>SOON...</span></h1>
                     <p>We are working hard to give you a better experience with our new impressive site.</p>
@@ -176,11 +177,12 @@
                 </div>
             </div>
             <div class="right">
-                <img alt="Illustration of people working on a large computer screen" height="400" src="img/coming-soon.svg" width="600" />
+                <img alt="Illustration of people working on a large computer screen" height="400"
+                    src="img/coming-soon.svg" width="600" />
             </div>
         </div>
     </div>
-    
+
 
     <!-- Hero Section -->
     <section id="hero">
@@ -402,7 +404,7 @@
                 </ul>
                 <!-- <button class="btn" aria-label="Choose 3-month plan for ₹500">Choose Plan</button> -->
             </article>
-    
+
             <!-- 6 Months Plan -->
             <article class="pricing-card">
                 <h2>6 Months Plan</h2>
@@ -420,7 +422,7 @@
                 </ul>
                 <!-- <button class="btn" aria-label="Choose 6-month plan for ₹800">Choose Plan</button> -->
             </article>
-    
+
             <!-- 1 Year Plan -->
             <article class="pricing-card">
                 <h2>1 Year Plan</h2>
@@ -440,7 +442,7 @@
             </article>
         </div>
     </section>
-    
+
 
 
     <!-- Testimonials Section -->

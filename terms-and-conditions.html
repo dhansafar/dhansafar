@@ -34,13 +34,14 @@
 <body>
     <!-- Header Section -->
     <header>
-        <a href="index.html">
+        <a href="index.html" aria-label="Go to home page">
             <div class="logo">
                 <img alt="DhanSafar logo" src="icon/icon.png" width="40" height="40" />
                 <span>DhanSafar</span>
             </div>
         </a>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
+            >
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#features">Features</a></li>
@@ -51,24 +52,27 @@
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="social-icons">
-            <a href="https://in.linkedin.com/company/dhansafar" target="_blank" rel="noopener noreferrer">
+        <div class="social-icons" role="complementary" aria-label="Follow us on social media">
+            <a href="https://in.linkedin.com/company/dhansafar" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/dhansafar.official/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/dhansafar.official/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://x.com/dhansafar" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/dhansafar" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@harshilchovatiyaa" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@harshilchovatiyaa" target="_blank" rel="noopener noreferrer"
+                aria-label="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>
         <!-- Mobile Menu Toggle Button -->
-        <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open mobile menu">
             <span>&#9776;</span>
-        </div>
+            </div>
     </header>
 
     <div class="terms-container">
