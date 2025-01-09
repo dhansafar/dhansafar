@@ -19,7 +19,7 @@ function trackVisitor() {
 }
 
 // Call the function to track the visitor
-// trackVisitor();
+trackVisitor();
 
 // Function to track the download when the APK link is clicked
 function trackDownload() {
