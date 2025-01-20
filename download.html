@@ -39,11 +39,21 @@
 
     <!-- Favicon for Web Manifest -->
     <link rel="manifest" href="icon/manifest.json" />
-
+    <link rel="alternate" href="https://www.dhansafar.com/apk/dhansafar.apk"
+        type="application/vnd.android.package-archive">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/download.css">
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY58HPEE1T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TY58HPEE1T');
+    </script>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -77,6 +87,7 @@
             "@type": "Offer",
             "priceCurrency": "INR",
             "price": "1200",
+            "availability": "https://schema.org/InStock",
             "url": "https://www.dhansafar.com"
           },
           "sameAs": "https://www.dhansafar.com",
@@ -136,12 +147,12 @@
         </a>
         <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#features">Features</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#features">Features</a></li>
                 <li><a href="download.html">Download</a></li>
                 <li><a href="about-us.html">About</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+                <li><a href="/#faq">FAQ</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
         </nav>
@@ -174,7 +185,8 @@
             <p>Your ultimate financial companion for contractors. Simplify budgeting, real-time calculations, and more.
             </p>
             <div class="dw-hero-buttons">
-                <a href="apk/dhansafar.apk" download class="btn-download" onclick="trackDownload()">Download APK for
+                <a href="apk/dhansafar.apk" download class="btn-download" onclick="trackDownload()"
+                    rel="nofollow">Download APK for
                     Android</a>
                 <p>OR</p>
                 <div class="dw-hero-qr">
@@ -432,69 +444,55 @@
         <!-- JSON-LD Schema for Testimonials -->
         <script type="application/ld+json">
             {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Manoj Patel"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "DhanSafar has completely revolutionized the way I manage my finances. The real-time calculations and budget tracking have made financial planning incredibly efficient. This app is a must-have for anyone serious about managing their finances!",
-            "datePublished": "2024-12-17"
-            },
-            {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Rajesh Desai"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.5",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "As a contractor, the Feet & Inches Calculator feature has saved me so much time. It's the perfect tool to help me manage both my personal finances and project budgets. I'm amazed at how easy this app makes everything!",
-            "datePublished": "2024-12-20"
-            },
-            {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Kunal Mehta"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.2",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "The interface is clean, intuitive, and incredibly easy to use. DhanSafar has all the features I need to manage my finances effectively, and I couldn't ask for a better app to help me stay organized!",
-            "datePublished": "2025-01-05"
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "DhanSafar",
+              "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively.",
+              "review": [
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 5,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Manoj Patel"
+                  }
+                },
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 4.5,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Rajesh Desai"
+                  }
+                },
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 4.8,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Kunal Mehta"
+                  }
+                }
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": 4.77,
+                "reviewCount": 3
+              }
             }
-        </script>
+            </script>
     </section>
 
     <section id="faq" class="faq-section">

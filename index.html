@@ -30,6 +30,8 @@
     <!-- Favicon for Web Manifest -->
     <link rel="manifest" href="icon/manifest.json" />
 
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://dhansafar.com/" />
 
     <!-- Open Graph (OG) Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="DhanSafar - Financial Management App for Contractors" />
@@ -52,7 +54,6 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/popup.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY58HPEE1T"></script>
@@ -84,7 +85,6 @@
           
         }
     </script>
-    <script src="js/popup.js"></script>
 </head>
 
 <body>
@@ -99,12 +99,12 @@
         <nav role="navigation" aria-label="Main navigation">
 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#features">Features</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#features">Features</a></li>
                 <li><a href="download.html">Download</a></li>
                 <li><a href="about-us.html">About</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+                <li><a href="/#faq">FAQ</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
         </nav>
@@ -130,70 +130,6 @@
             <span>&#9776;</span>
             </div>
     </header>
-
-
-    <div id="popup" class="popup-overlay">
-        <div class="popup-container">
-            <div class="close-button" id="close-btn">&times;</div> <!-- Close Button -->
-
-            <div class="left">
-                <div class="logo">
-                    <img alt="SecretSpirit logo" height="40" src="icon/icon.png" width="40" />
-                    <span>DhanSafar</span>
-                </div>
-
-
-                <div class="content">
-                    <h1>COMING <span>SOON...</span></h1>
-                    <p>We are working hard to give you a better experience with our new impressive site.</p>
-                    <p>Stay connected, Stay updated!</p>
-                    <p><strong>For more inquiry:</strong> <br />
-                        <a href="mailto:contact.dhansafar@gmail.com">contact.dhansafar@gmail.com</a> <br />
-                        <a href="tel:+919537192471">+91 95371 92471</a>
-                    </p>
-                    <div class="countdown">
-                        <div id="countdown-timer" class="timer">
-                            <div class="time-box" id="days">
-                                <span class="number" id="days-number">00</span>
-                                <span class="label">Days</span>
-                            </div>
-                            <div class="time-box" id="hours">
-                                <span class="number" id="hours-number">00</span>
-                                <span class="label">Hours</span>
-                            </div>
-                            <div class="time-box" id="minutes">
-                                <span class="number" id="minutes-number">00</span>
-                                <span class="label">Minutes</span>
-                            </div>
-                            <div class="time-box" id="seconds">
-                                <span class="number" id="seconds-number">00</span>
-                                <span class="label">Seconds</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-icons">
-                    <a href="https://in.linkedin.com/company/dhansafar" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/dhansafar.official/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com/dhansafar" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@harshilchovatiyaa" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="right">
-                <img alt="Illustration of people working on a large computer screen" height="400"
-                    src="img/coming-soon.svg" width="600" />
-            </div>
-        </div>
-    </div>
-
 
     <!-- Hero Section -->
     <section id="hero">
@@ -505,69 +441,56 @@
         <!-- JSON-LD Schema for Testimonials -->
         <script type="application/ld+json">
             {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Manoj Patel"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "DhanSafar has completely revolutionized the way I manage my finances. The real-time calculations and budget tracking have made financial planning incredibly efficient. This app is a must-have for anyone serious about managing their finances!",
-            "datePublished": "2024-12-17"
-            },
-            {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Rajesh Desai"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.5",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "As a contractor, the Feet & Inches Calculator feature has saved me so much time. It's the perfect tool to help me manage both my personal finances and project budgets. I'm amazed at how easy this app makes everything!",
-            "datePublished": "2024-12-20"
-            },
-            {
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Product",
-                "name": "DhanSafar",
-                "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively."
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Kunal Mehta"
-            },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.8",
-                "bestRating": "5",
-                "worstRating": "4"
-            },
-            "reviewBody": "The interface is clean, intuitive, and incredibly easy to use. DhanSafar has all the features I need to manage my finances effectively, and I couldn't ask for a better app to help me stay organized!",
-            "datePublished": "2025-01-05"
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "DhanSafar",
+              "description": "The Best Financial Management App for contractors, professionals, and individuals to manage both personal and project finances effectively.",
+              "review": [
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 5,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Manoj Patel"
+                  }
+                },
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 4.5,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Rajesh Desai"
+                  }
+                },
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 4.8,
+                    "bestRating": 5
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Kunal Mehta"
+                  }
+                }
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": 4.77,
+                "reviewCount": 3
+              }
             }
-        </script>
+            </script>
+
     </section>
 
     <section id="faq" class="faq-section">

@@ -130,9 +130,8 @@ nav a:hover {
     align-items: center;
     background-color: #502D8A;
     color: white;
-    padding: 80px 40px;
-    height: 500px;
-    /* Set a fixed height for the hero section */
+    padding: 50px 40px;
+    height: 450px;
     position: relative;
 }
 
@@ -232,7 +231,7 @@ nav a:hover {
 
 /* Feature One Section */
 .feature-one {
-    padding: 80px 40px;
+    padding: 40px 40px;
     background-color: #f9f9f9;
 }
 
@@ -330,6 +329,10 @@ nav a:hover {
         flex: 1 1 100%;
     }
 
+    .feature-one .feature-btn {
+        padding: 15px 15px;
+    }
+
     .single-feature h3 {
         font-size: 28px;
     }
@@ -348,7 +351,7 @@ nav a:hover {
 .features-section {
     background-color: #f7f7f7;
     /* Light gray background for the entire section */
-    padding: 80px 40px;
+    padding: 40px 40px;
 }
 
 .features-section h2 {
@@ -580,7 +583,7 @@ nav a:hover {
 /* About Dhan Safar Section Styling */
 .about-section {
     background-color: #fff;
-    padding: 80px 40px;
+    padding: 40px 40px;
     color: #333;
 }
 
@@ -678,7 +681,7 @@ nav a:hover {
 /* Screenshot Section */
 .screenshots-section {
     background-color: #f5f5f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -792,7 +795,7 @@ nav a:hover {
 .pricing-section {
     background-color: #502D8A;
     color: white;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -913,7 +916,7 @@ nav a:hover {
 /* ======== */
 .testimonials-section {
     background-color: #f5f5f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -983,7 +986,7 @@ nav a:hover {
 /* ============ */
 .faq-section {
     background-color: #502D8A;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: #fff;
     text-align: center;
 }
@@ -1065,7 +1068,7 @@ nav a:hover {
 /* ============== */
 .partners-section {
     background-color: #f5f5f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -1146,7 +1149,7 @@ nav a:hover {
 /* =============== */
 .blog-section {
     background-color: #502D8A;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: white;
     text-align: center;
 }
@@ -1231,7 +1234,7 @@ nav a:hover {
 /* ======================== */
 .app-download-section {
     background-color: #f5f5f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -1324,7 +1327,7 @@ nav a:hover {
 
 .newsletter-section {
     background-color: #502D8A;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: white;
 }
 
@@ -1430,7 +1433,7 @@ nav a:hover {
 
 .contact-us-section {
     background-color: #f5f5f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: #333333;
 }
 

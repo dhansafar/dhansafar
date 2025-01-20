@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /apk/dhansafar.apk
+Disallow: /private/
+Disallow: /temp/
+Allow: /
+
+Sitemap: https://www.dhansafar.com/sitemap.xml
