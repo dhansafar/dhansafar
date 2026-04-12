@@ -1,7 +1,10 @@
 // Mobile menu toggle functionality
-document.getElementById('mobile-menu').addEventListener('click', function () {
-    document.querySelector('nav').classList.toggle('active');
-});
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', function () {
+        document.querySelector('nav').classList.toggle('active');
+    });
+}
 // Close mobile menu when any navigation link is clicked
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
@@ -82,121 +85,106 @@ function toggleAnswer(faqId) {
 }
 // =================
 
-document.getElementById("newsletterForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+const newsletterForm = document.getElementById("newsletterForm");
+if (newsletterForm) {
+    newsletterForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-    const email = document.getElementById("nw-email").value;
-    // const name = document.getElementById("name").value;
-    // const phoneNumber = document.getElementById("phone_number").value;
-    // Validate required fields
-    if (!email) {
-        alert("Please fill out the email.");
-        return;
-    }
-
-    // Prepare the data to be sent in the request
-    const formData = {
-        email: email,
-    };
-
-    try {
-        // Send a POST request to the newsletter subscription API
-        const response = await fetch('https://dhansafar-web-api.vercel.app/api/newsletter/subscribe', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-
-        // Handle the response from the API
-        const data = await response.json();
-
-        if (response.ok) {
-            // Success: display a success message
-            alert('You have successfully subscribed to the newsletter!');
-            document.getElementById('newsletterForm').reset(); // Reset the form
-        } else {
-            // Error: display the error message from the API response
-            alert(`Error: ${data.error || 'An error occurred. Please try again later.'}`);
+        const email = document.getElementById("nw-email").value;
+        // const name = document.getElementById("name").value;
+        // const phoneNumber = document.getElementById("phone_number").value;
+        // Validate required fields
+        if (!email) {
+            alert("Please fill out the email.");
+            return;
         }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred while subscribing. Please try again later.');
-    }
 
-    // // Placeholder for API integration
-    // fetch("https://dhansafar-user-api.vercel.app/api/inquiries", {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //         name: name,
-    //         phone_number: phoneNumber,
-    //     }),
-    // })
-    //     .then((response) => response.json())
-    //     .then((data) => {
-    //         alert("Thank you for subscribing!");
-    //         // Clear form inputs
-    //         document.getElementById("newsletterForm").reset();
-    //     })
-    //     .catch((error) => {
-    //         console.error("Error:", error);
-    //         alert("Something went wrong. Please try again later.");
-    //     });
-});
+        // Prepare the data to be sent in the request
+        const formData = {
+            email: email,
+        };
+
+        try {
+            // Send a POST request to the newsletter subscription API
+            const response = await fetch('https://dhansafar-web-api.vercel.app/api/newsletter/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // Handle the response from the API
+            const data = await response.json();
+
+            if (response.ok) {
+                // Success: display a success message
+                alert('You have successfully subscribed to the newsletter!');
+                document.getElementById('newsletterForm').reset(); // Reset the form
+            } else {
+                // Error: display the error message from the API response
+                alert(`Error: ${data.error || 'An error occurred. Please try again later.'}`);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while subscribing. Please try again later.');
+        }
+
+    });
+}
 
 // ========
 
-document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-    const name = document.getElementById("co-name").value;
-    const phoneNumber = document.getElementById("co-phone_number").value;
-    const message = document.getElementById("co-message").value;
-    // Placeholder for API integration
+        const name = document.getElementById("co-name").value;
+        const phoneNumber = document.getElementById("co-phone_number").value;
+        const message = document.getElementById("co-message").value;
+        // Placeholder for API integration
 
-    // Validate required fields
-    if (!name || !phoneNumber) {
-        alert("Please fill out all required fields.");
-        return;
-    }
-
-    // Create an object to hold the form data
-    const formData = {
-        name: name,
-        phone_number: phoneNumber,
-        message: message
-    };
-    // API endpoint to send the form data to
-    const apiUrl = 'https://dhansafar-web-api.vercel.app/api/contacts'; // Replace with your actual API endpoint
-
-    try {
-        // Send a POST request to the API (Replace '/contacts' with the correct API endpoint if needed)
-        const response = await fetch(apiUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-
-        // Handle the response from the API
-        const data = await response.json();
-
-        if (response.ok) {
-            // Success: display a success message
-            alert('Your message has been sent successfully!');
-            document.getElementById('contactForm').reset(); // Reset the form
-        } else {
-            // Error: display the error message from the API response
-            alert(`Error: ${data.error || 'An error occurred. Please try again later.'}`);
+        // Validate required fields
+        if (!name || !phoneNumber) {
+            alert("Please fill out all required fields.");
+            return;
         }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred while sending your message. Please try again later.');
-    }
-});
+
+        // Create an object to hold the form data
+        const formData = {
+            name: name,
+            phone_number: phoneNumber,
+            message: message
+        };
+        // API endpoint to send the form data to
+        const apiUrl = 'https://dhansafar-web-api.vercel.app/api/contacts'; // Replace with your actual API endpoint
+
+        try {
+            // Send a POST request to the API (Replace '/contacts' with the correct API endpoint if needed)
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // Handle the response from the API
+            const data = await response.json();
+
+            if (response.ok) {
+                // Success: display a success message
+                alert('Your message has been sent successfully!');
+                document.getElementById('contactForm').reset(); // Reset the form
+            } else {
+                // Error: display the error message from the API response
+                alert(`Error: ${data.error || 'An error occurred. Please try again later.'}`);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while sending your message. Please try again later.');
+        }
+    });
+}
 

@@ -7,7 +7,9 @@ function animateCounter() {
     let interval = setInterval(function () {
         if (count < target) {
             count++;
-            downloadCount.textContent = count;
+            if (downloadCount) {
+                downloadCount.textContent = count;
+            }
         } else {
             clearInterval(interval);
         }
@@ -15,24 +17,26 @@ function animateCounter() {
 }
 
 // Start the counter animation on page load
-window.onload = animateCounter;
+if (downloadCount) {
+    window.onload = animateCounter;
+}
 
-// // Function to track the download when the APK link is clicked
-// function trackDownload() {
-//     // Define the URL for tracking the download
-//     const trackDownloadUrl = 'https://dhansafar-web-api.vercel.app/api/track-download';  // Adjust to match your backend URL
-//     // Make a POST request to track the download
-//     fetch(trackDownloadUrl, {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json', // Ensure the request is in JSON format
-//         },
-//     })
-//         .then(response => response.json())
-//         .then(data => {
-//             console.log('Download tracked:', data);  // Log the response for debugging
-//         })
-//         .catch((error) => {
-//             console.error('Error tracking download:', error);  // Handle any errors
-//         });
-// }
+// Function to track the download when the APK link is clicked
+function trackDownload() {
+    // Define the URL for tracking the download
+    const trackDownloadUrl = 'https://dhansafar-web-api.vercel.app/api/track-download';  // Adjust to match your backend URL
+    // Make a POST request to track the download
+    fetch(trackDownloadUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json', // Ensure the request is in JSON format
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Download tracked:', data);  // Log the response for debugging
+        })
+        .catch((error) => {
+            console.error('Error tracking download:', error);  // Handle any errors
+        });
+}

@@ -1,5 +1,7 @@
-document.getElementById('contactForm').addEventListener('submit', async function (event) {
-    event.preventDefault(); // Prevent default form submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async function (event) {
+        event.preventDefault(); // Prevent default form submission
 
     // Get form data
     const name = document.getElementById('cp-name').value;
@@ -47,4 +49,5 @@ document.getElementById('contactForm').addEventListener('submit', async function
         alert('An error occurred while sending your message. Please try again later.');
     }
     
-});
+    });
+}
